@@ -1,0 +1,694 @@
+id,category,difficulty,reasoning_type,question,expected_answer,response,time_seconds
+1,Logic,Easy,Deductive,"If five machines make five toys in five minutes, how long would 100 machines take to make 100 toys? Explain your reasoning.",5 minutes,"To solve this problem, let's break down the information and reasoning step-by-step.
+
+First, we know that:
+- Five machines can make five toys in five minutes.
+
+From this information, we can deduce the rate at which the machines work:
+- In five minutes, five machines produce five toys.
+- Therefore, one machine produces one toy in five minutes.
+
+Now, if we have 100 machines working simultaneously, each of these 100 machines will also produce one toy in five minutes.
+
+So, with 100 machines working together:
+- Each machine produces one toy in five minutes.
+- Therefore, all 100 machines will produce 100 toys in five minutes.
+
+Thus, it would take **five minutes** for 100 machines to make 100 toys. The key is understanding that the machines are working independently and simultaneously, so their combined output scales linearly with the number of machines.",11.909853458404541
+2,Logic,Easy,Deductive,All roses are flowers. Some flowers fade quickly. Can you conclude that all roses fade quickly? Explain.,No,"No, we cannot conclude that all roses fade quickly based on the given premises.
+
+Let's break down the information provided:
+
+1. All roses are flowers.
+2. Some flowers fade quickly.
+
+From the first premise, we know that every rose is classified as a flower. However, this does not imply anything about the specific behavior of roses in relation to how quickly they fade.
+
+The second premise tells us that there exists at least one flower that fades quickly. This means that some flowers have a tendency to fade rapidly, but it does not specify which flowers or if this applies to all flowers.
+
+Therefore, since not all flowers necessarily fade quickly (only some do), and roses are a subset of flowers, it follows that not all roses must fade quickly. Some roses might fade quickly, while others might not.
+
+In summary, the conclusion ""all roses fade quickly"" is not logically valid based on the given premises.",9.631235599517822
+3,Logic,Easy,Pattern,"Which number comes next: 2, 4, 8, 16, ?",32,"The sequence you've provided is a series of powers of 2. Let's break it down:
+
+- The first term is \(2^1 = 2\)
+- The second term is \(2^2 = 4\)
+- The third term is \(2^3 = 8\)
+- The fourth term is \(2^4 = 16\)
+
+Following this pattern, the next term would be \(2^5 = 32\).
+
+So, the next number in the sequence is **32**.",6.0942394733428955
+4,Logic,Medium,Conditional,"If all A are B and all B are C, are all A C?",Yes,"To determine if all A are C given that ""all A are B"" and ""all B are C,"" we can use the principles of categorical logic.
+
+1. **Given Statements:**
+   - All A are B (A ⊃ B)
+   - All B are C (B ⊃ C)
+
+2. **Implication Analysis:**
+   - If something is an A, then it must be a B (A ⊃ B).
+   - If something is a B, then it must be a C (B ⊃ C).
+
+3. **Transitivity of Implication:**
+   - From A ⊃ B and B ⊃ C, we can infer that A ⊃ C using the transitive property of implication.
+   - This means that if something is an A, it must also be a C.
+
+Therefore, based on the given statements, we can conclude that:
+
+- **All A are C** (A ⊃ C).",10.553560972213745
+5,Logic,Medium,Deductive,John is taller than Mary. Mary is taller than Sam. Who is tallest?,John,"Based on the information provided:
+
+1. John is taller than Mary.
+2. Mary is taller than Sam.
+
+From these statements, we can deduce that John is taller than Mary, and Mary is taller than Sam. Therefore, John must be the tallest among the three.",2.892158031463623
+6,Logic,Medium,Logic,A farmer has 17 sheep and all but 9 die. How many remain?,9,"If the farmer initially had 17 sheep and all but 9 die, then the number of sheep that remain is 9. The phrase ""all but 9"" means every sheep except for 9 sheep survive. So, 9 sheep remain alive.",2.81081485748291
+7,Logic,Hard,Knights,A knight always tells the truth and a knave always lies. Alice says 'Bob is a knave.' Bob says 'We are both knights.' Who is the knight?,Alice knight; Bob knave,"Let's analyze the statements made by Alice and Bob to determine who is the knight and who is the knave.
+
+1. **Alice says:** ""Bob is a knave.""
+2. **Bob says:** ""We are both knights.""
+
+### Case 1: Assume Alice is the knight.
+- If Alice is the knight, then her statement must be true. So, Bob must be a knave.
+- If Bob is a knave, his statement ""We are both knights"" would be false. This means that at least one of them (Alice) is not a knight, which contradicts our assumption that Alice is the knight.
+- Therefore, Alice cannot be the knight.
+
+### Case 2: Assume Bob is the knight.
+- If Bob is the knight, then his statement ""We are both knights"" must be true. This means Alice must also be a knight.
+- If Alice is a knight, her statement ""Bob is a knave"" would be false, but this does not contradict anything since we assumed Bob is a knight.
+- Therefore, Bob being the knight leads to a consistent scenario where both Alice and Bob are knights.
+
+Thus, based on the analysis, Bob is the knight and Alice is the knave.",13.167615413665771
+8,Logic,Hard,Logic,Which weighs more: 1 kg of iron or 1 kg of cotton?,Same weight,"The weight of 1 kg (kilogram) of iron and 1 kg of cotton is the same. The mass is measured in kilograms, which is a unit of weight or mass, not volume. Therefore, regardless of whether it's iron or cotton, 1 kg will always weigh 1 kg. The density of iron is significantly higher than that of cotton, meaning that 1 kg of iron will occupy less volume compared to 1 kg of cotton. However, this difference in volume does not affect the weight measurement.",5.9400575160980225
+9,Logic,Hard,Calendar,"If today is Monday, what day will it be 100 days later?",Wednesday,"To determine the day of the week 100 days from today (Monday), we can use modular arithmetic.
+
+Since there are 7 days in a week, we can find the remainder when 100 is divided by 7. This remainder will tell us how many days beyond a whole number of weeks 100 days is.
+
+Let's calculate:
+
+\[ 100 \div 7 = 14 \text{ R } 2 \]
+
+This means that 100 days is equivalent to 14 full weeks plus 2 extra days. Since today is Monday, adding 2 days to Monday brings us to Wednesday.
+
+Therefore, 100 days from today (Monday) will be a **Wednesday**.",8.052717924118042
+10,Logic,Hard,Reasoning,Three switches control three bulbs in another room. You may enter the room only once. How do you identify each switch?,Heat/light bulb method,"To solve this problem, you can follow these steps:
+
+1. **Turn on the first switch and leave it on for a few minutes.** This will allow the bulb connected to that switch to heat up.
+2. **After a few minutes, turn off the first switch and immediately turn on the second switch.**
+3. **Enter the room and check the bulbs.**
+
+Here's how you can identify each bulb:
+
+- The bulb that is **hot** is controlled by the first switch (since it was left on for a while).
+- The bulb that is **warm but not hot** is controlled by the second switch (since it was turned on just before you entered the room).
+- The bulb that is **not warm at all** is controlled by the third switch (since it has never been turned on).
+
+By following these steps, you can identify which switch controls which bulb with just one entry into the room.",9.860626697540283
+11,Mathematics,Easy,Arithmetic,What is 25 × 16?,400,25 times 16 equals 400.,0.6765272617340088
+12,Mathematics,Easy,Arithmetic,Solve: 144 ÷ 12,12,"144 ÷ 12 equals 12.
+
+To break it down:
+- 144 divided by 12 is the same as asking how many times 12 can fit into 144.
+- 12 fits into 144 exactly 12 times.
+
+So, the answer is 12.",4.27339243888855
+13,Mathematics,Easy,Percentage,A shirt costs $80 and is discounted by 25%. What is the sale price?,60,"To find the sale price of the shirt after a 25% discount, we can follow these steps:
+
+1. Calculate the amount of the discount.
+2. Subtract the discount from the original price.
+
+First, let's calculate the amount of the discount. The original price of the shirt is $80, and it is being discounted by 25%. To find out how much 25% of $80 is, we use the formula:
+
+\[ \text{Discount Amount} = \text{Original Price} \times \frac{\text{Discount Percentage}}{100} \]
+
+Substituting the given values:
+
+\[ \text{Discount Amount} = 80 \times \frac{25}{100} = 80 \times 0.25 = 20 \]
+
+So, the discount amount is $20.
+
+Next, we subtract the discount amount from the original price to get the sale price:
+
+\[ \text{Sale Price} = \text{Original Price} - \text{Discount Amount} \]
+\[ \text{Sale Price} = 80 - 20 = 60 \]
+
+Therefore, the sale price of the shirt is $60.",13.423565149307251
+14,Mathematics,Medium,Algebra,Solve: 2x + 5 = 17,6,"To solve the equation \(2x + 5 = 17\), we will follow these steps:
+
+1. **Subtract 5 from both sides** of the equation to isolate the term with the variable:
+   \[
+   2x + 5 - 5 = 17 - 5
+   \]
+   Simplifying this gives:
+   \[
+   2x = 12
+   \]
+
+2. **Divide both sides** by 2 to solve for \(x\):
+   \[
+   \frac{2x}{2} = \frac{12}{2}
+   \]
+   Simplifying this gives:
+   \[
+   x = 6
+   \]
+
+So, the solution to the equation \(2x + 5 = 17\) is \(x = 6\).",9.299552202224731
+15,Mathematics,Medium,Ratio,"Flour:sugar=3:2. If flour is 9 cups, how much sugar?",6 cups,"Given the ratio of flour to sugar is 3:2, we can set up a proportion to find out how much sugar is needed when there are 9 cups of flour.
+
+The ratio 3:2 means for every 3 parts of flour, there are 2 parts of sugar. 
+
+If we have 9 cups of flour, we can determine how many ""parts"" of flour this represents in terms of the given ratio:
+
+\[ \text{Number of parts of flour} = \frac{9 \text{ cups}}{3 \text{ parts}} = 3 \text{ parts} \]
+
+Since the ratio is 3:2, for every 3 parts of flour, there are 2 parts of sugar. Therefore, if there are 3 parts of flour, there will be:
+
+\[ \text{Number of parts of sugar} = \frac{2}{3} \times 3 = 2 \text{ parts} \]
+
+Now, since each part corresponds to 3 cups of flour (because \( \frac{9 \text{ cups}}{3 \text{ parts}} = 3 \text{ cups per part} \)), the amount of sugar would be:
+
+\[ \text{Amount of sugar} = 2 \text{ parts} \times 3 \text{ cups per part} = 6 \text{ cups} \]
+
+So, you would need 6 cups of sugar if you have 9 cups",15.595256328582764
+16,Mathematics,Medium,Sequence,"Find next: 3,6,11,18,27,?",38,"To find the next number in the sequence 3, 6, 11, 18, 27, we can look for patterns in the differences between consecutive terms.
+
+Let's calculate the differences between each pair of consecutive numbers:
+
+- \(6 - 3 = 3\)
+- \(11 - 6 = 5\)
+- \(18 - 11 = 7\)
+- \(27 - 18 = 9\)
+
+The differences between consecutive terms form another sequence: 3, 5, 7, 9. This new sequence is increasing by 2 each time (3 to 5, 5 to 7, 7 to 9).
+
+Following this pattern, the next difference should be \(9 + 2 = 11\).
+
+Therefore, adding this difference to the last term in the original sequence gives us:
+\[27 + 11 = 38\]
+
+So, the next number in the sequence is **38**.",11.216501474380493
+17,Mathematics,Hard,Combinations,How many ways to choose 3 people from 8?,56,"To determine the number of ways to choose 3 people from a group of 8, we use the concept of combinations. The formula for combinations is given by:
+
+\[
+C(n, k) = \frac{n!}{k!(n-k)!}
+\]
+
+where \( n \) is the total number of items to choose from, \( k \) is the number of items to choose, and \( ! \) denotes factorial.
+
+In this problem:
+- \( n = 8 \)
+- \( k = 3 \)
+
+Plugging these values into the formula, we get:
+
+\[
+C(8, 3) = \frac{8!}{3!(8-3)!} = \frac{8!}{3! \cdot 5!}
+\]
+
+Next, we need to calculate the factorials:
+- \( 8! = 8 \times 7 \times 6 \times 5 \times 4 \times 3 \times 2 \times 1 \)
+- \( 3! = 3 \times 2 \times 1 = 6 \)
+- \( 5! = 5 \times 4 \times 3 \times 2 \times 1 = 120 \)
+
+However, since \( 8! \) includes \( 5! \), we can simplify the calculation by canceling out \( 5! \):
+
+\[
+\frac{8!}{3",15.59416389465332
+18,Mathematics,Hard,Statistics,"Mean of 4,7,9,10,20",10,"To find the mean (average) of the numbers 4, 7, 9, 10, and 20, you add them together and then divide by the number of values.
+
+So, let's calculate it step-by-step:
+
+1. Add the numbers: \( 4 + 7 + 9 + 10 + 20 = 50 \)
+2. Count the number of values: There are 5 numbers.
+3. Divide the sum by the count: \( \frac{50}{5} = 10 \)
+
+Therefore, the mean of the numbers 4, 7, 9, 10, and 20 is 10.",8.009577989578247
+19,Mathematics,Hard,Geometry,Area of rectangle 15×8,120,"The area of a rectangle is calculated using the formula:
+
+\[ \text{Area} = \text{length} \times \text{width} \]
+
+Given that the length is 15 and the width is 8, we can calculate the area as follows:
+
+\[ \text{Area} = 15 \times 8 = 120 \]
+
+So, the area of the rectangle is 120 square units.",4.6616315841674805
+20,Mathematics,Hard,Word Problem,Taxi charges $4 + $2 per mile. Cost for 13 miles.,30,"To calculate the total cost of a taxi ride that is 13 miles long, given that the base fare is $4 and the charge is $2 per mile, you can use the following formula:
+
+\[ \text{Total Cost} = \text{Base Fare} + (\text{Charge per Mile} \times \text{Number of Miles}) \]
+
+Plugging in the values:
+
+\[ \text{Total Cost} = 4 + (2 \times 13) \]
+\[ \text{Total Cost} = 4 + 26 \]
+\[ \text{Total Cost} = 30 \]
+
+So, the total cost for a 13-mile taxi ride would be $30.",8.115354776382446
+21,Probability,Easy,Probability,Probability of heads on a fair coin.,2-Jan,"The probability of getting heads on a single toss of a fair coin is 0.5 or 50%. 
+
+A fair coin has two sides: heads and tails. Since the coin is fair, each side has an equal chance of landing face up when it is tossed. Therefore, the probability of landing on heads (P(Heads)) is:
+
+\[ P(\text{Heads}) = \frac{\text{Number of favorable outcomes for Heads}}{\text{Total number of possible outcomes}} = \frac{1}{2} = 0.5 \]
+
+This can also be expressed as 50% or 0.5.",6.740871429443359
+22,Probability,Easy,Probability,Probability of rolling a 6 on a fair die.,6-Jan,"The probability of rolling a 6 on a fair six-sided die can be calculated using the basic formula for probability:
+
+\[ \text{Probability} = \frac{\text{Number of favorable outcomes}}{\text{Total number of possible outcomes}} \]
+
+For a fair six-sided die:
+- The number of favorable outcomes (rolling a 6) is 1.
+- The total number of possible outcomes (rolling any number from 1 to 6) is 6.
+
+So, the probability \( P \) of rolling a 6 is:
+
+\[ P(\text{rolling a 6}) = \frac{1}{6} \]
+
+Therefore, the probability of rolling a 6 on a fair die is \( \frac{1}{6} \).",8.30924916267395
+23,Probability,Easy,Conditional,Two fair coins tossed. Probability of exactly one head.,2-Jan,"To find the probability of getting exactly one head when two fair coins are tossed, we can follow these steps:
+
+1. **Identify all possible outcomes:**
+   When two fair coins are tossed, each coin has two possible outcomes (heads or tails). Therefore, the total number of possible outcomes is:
+   \[
+   2 \times 2 = 4
+   \]
+   The possible outcomes are:
+   - Heads on the first coin and Heads on the second coin (HH)
+   - Heads on the first coin and Tails on the second coin (HT)
+   - Tails on the first coin and Heads on the second coin (TH)
+   - Tails on the first coin and Tails on the second coin (TT)
+
+2. **Identify the favorable outcomes:**
+   We need to find the outcomes where exactly one head appears. From the list above, the favorable outcomes are:
+   - HT (Heads on the first coin and Tails on the second coin)
+   - TH (Tails on the first coin and Heads on the second coin)
+
+   There are 2 favorable outcomes.
+
+3. **Calculate the probability:**
+   The probability \( P \) of an event is given by the ratio of the number of favorable outcomes to the total number of possible outcomes. Therefore, the probability of getting exactly one head is:
+   \[
+   P(\text{exactly one head}) = \frac{\text{Number of favorable outcomes}}",15.731145143508911
+24,Probability,Medium,Probability,"Bag has 3 red,2 blue. Probability of drawing red.",5-Mar,"To find the probability of drawing a red ball from the bag, we can use the basic probability formula:
+
+\[ \text{Probability} = \frac{\text{Number of favorable outcomes}}{\text{Total number of possible outcomes}} \]
+
+In this case:
+- The number of favorable outcomes (drawing a red ball) is 3.
+- The total number of possible outcomes (total balls in the bag) is 5 (3 red + 2 blue).
+
+So, the probability \( P \) of drawing a red ball is:
+
+\[ P(\text{Red}) = \frac{3}{5} \]
+
+This fraction cannot be simplified further, so the probability of drawing a red ball from the bag is \( \frac{3}{5} \) or 0.6 (which is equivalent to 60%).",9.112630367279053
+25,Probability,Medium,Independence,Probability both dice show 6.,Jan-36,"To calculate the probability that both dice show a 6 when rolling two six-sided dice, we can follow these steps:
+
+1. **Determine the total number of possible outcomes:**
+   Each die has 6 faces, so when rolling two dice, the total number of possible outcomes is:
+   \[
+   6 \times 6 = 36
+   \]
+
+2. **Determine the number of favorable outcomes:**
+   For both dice to show a 6, there is only one specific outcome that satisfies this condition:
+   \[
+   (6, 6)
+   \]
+   So, there is exactly 1 favorable outcome.
+
+3. **Calculate the probability:**
+   The probability \( P \) of an event is given by the ratio of the number of favorable outcomes to the total number of possible outcomes:
+   \[
+   P(\text{both dice show 6}) = \frac{\text{Number of favorable outcomes}}{\text{Total number of possible outcomes}} = \frac{1}{36}
+   \]
+
+Therefore, the probability that both dice show a 6 is \(\frac{1}{36}\).",12.537484169006348
+26,Probability,Medium,Expected Value,Expected value of fair die.,3.5,"The expected value (or expectation) of a random variable is the long-run average result if an experiment is repeated many times. For a fair six-sided die, each face has an equal probability of landing face up.
+
+A fair six-sided die has faces numbered from 1 to 6. The probability of rolling any specific number on a fair die is \( \frac{1}{6} \).
+
+To find the expected value \( E(X) \) of the roll of a fair six-sided die, we use the formula for the expected value of a discrete random variable:
+
+\[ E(X) = \sum_{i=1}^{n} x_i \cdot P(x_i) \]
+
+where:
+- \( x_i \) represents each possible outcome,
+- \( P(x_i) \) is the probability of that outcome.
+
+For a fair six-sided die, the outcomes \( x_i \) are 1, 2, 3, 4, 5, and 6, and each has a probability \( P(x_i) = \frac{1}{6} \).
+
+So, the expected value \( E(X) \) is calculated as follows:
+
+\[
+E(X) = 1 \cdot \frac{1}{6} + 2 \cdot \frac{1}{6} + 3 \cdot \frac{1}{6} + 4 \cdot \frac{1}{6} + 5 \cdot \frac{1",15.746782064437866
+27,Probability,Hard,Bayes,"Medical test: 99% sensitivity,95% specificity,1% prevalence. Does positive imply disease?",No; positive predictive value is much lower,"To determine whether a positive test result implies the presence of the disease, we need to consider both the sensitivity and specificity of the test, as well as the prevalence of the disease in the population.
+
+Given:
+- Sensitivity (True Positive Rate): 99%
+- Specificity (True Negative Rate): 95%
+- Prevalence: 1%
+
+Let's break this down step-by-step:
+
+### Step 1: Understanding Sensitivity and Specificity
+- **Sensitivity** is the probability that the test will be positive given that the person has the disease.
+- **Specificity** is the probability that the test will be negative given that the person does not have the disease.
+
+### Step 2: Prevalence
+Prevalence is the proportion of people in the population who have the disease. Here, it is 1%, meaning 1 out of every 100 people in the population has the disease.
+
+### Step 3: Calculating False Positives and True Positives
+We can use Bayes' theorem or a confusion matrix to understand the implications better. However, for simplicity, let's calculate the expected number of true positives and false positives based on the given data.
+
+#### Total Population Assumption
+Assume there are 10,000 people in the population (for easier calculation).
+
+- Number of people with the disease = 1% of 10,000 = 100 people.
+- Number of",16.430134534835815
+28,Probability,Hard,Cards,Probability of drawing an ace from a standard deck.,13-Jan,"In a standard deck of 52 playing cards, there are 4 aces (one for each suit: hearts, diamonds, clubs, and spades).
+
+To calculate the probability of drawing an ace from this deck, we use the formula:
+
+\[ \text{Probability} = \frac{\text{Number of favorable outcomes}}{\text{Total number of possible outcomes}} \]
+
+Here, the number of favorable outcomes is the number of aces, which is 4. The total number of possible outcomes is the total number of cards in the deck, which is 52.
+
+So, the probability \( P \) of drawing an ace is:
+
+\[ P(\text{Ace}) = \frac{4}{52} = \frac{1}{13} \]
+
+This fraction can be converted to a decimal or a percentage if needed. As a decimal, it's approximately 0.0769, and as a percentage, it's about 7.69%.
+
+Therefore, the probability of drawing an ace from a standard deck of cards is \( \frac{1}{13} \).",12.207412242889404
+29,Probability,Hard,Sampling,"5 green,5 yellow. Draw 2 without replacement. Both green?",9-Feb,"To solve this problem, we can use basic probability principles.
+
+First, let's determine the total number of ways to draw 2 balls out of 10 (5 green and 5 yellow) without replacement. This is given by the combination formula \( \binom{n}{k} = \frac{n!}{k!(n-k)!} \), where \( n \) is the total number of items, and \( k \) is the number of items to choose.
+
+The total number of ways to choose 2 balls from 10 is:
+\[ \binom{10}{2} = \frac{10!}{2!(10-2)!} = \frac{10 \times 9}{2 \times 1} = 45 \]
+
+Next, we need to find the number of ways to draw 2 green balls out of the 5 available green balls. This is given by:
+\[ \binom{5}{2} = \frac{5!}{2!(5-2)!} = \frac{5 \times 4}{2 \times 1} = 10 \]
+
+Now, the probability that both balls drawn are green is the ratio of the number of favorable outcomes to the total number of possible outcomes:
+\[ P(\text{both green}) = \frac{\text{Number of ways to choose 2 green balls}}{\text{Total number of ways to choose 2 balls",16.023907899856567
+30,Probability,Hard,Conditional,"Two-child family, at least one boy. Probability both boys.",3-Jan,"To solve this problem, we need to consider the possible outcomes for a two-child family where at least one child is a boy. We will then determine the probability that both children are boys given this condition.
+
+First, let's list all possible combinations of genders for two children:
+1. Boy-Boy (BB)
+2. Boy-Girl (BG)
+3. Girl-Boy (GB)
+4. Girl-Girl (GG)
+
+Since we know that at least one child is a boy, we can eliminate the possibility of having a girl-girl combination (GG). This leaves us with the following possible outcomes:
+1. Boy-Boy (BB)
+2. Boy-Girl (BG)
+3. Girl-Boy (GB)
+
+Now, there are 3 possible outcomes instead of 4. Out of these 3 outcomes, only 1 outcome corresponds to both children being boys (BB).
+
+The probability that both children are boys given that at least one child is a boy is therefore the number of favorable outcomes divided by the total number of possible outcomes under the given condition:
+
+\[
+P(\text{Both Boys} \mid \text{At Least One Boy}) = \frac{\text{Number of favorable outcomes}}{\text{Total number of possible outcomes}} = \frac{1}{3}
+\]
+
+So, the probability that both children are boys given that at least one child is a boy is \(\boxed{\frac{1}{3}}\).",15.539050102233887
+31,Coding,Easy,Python,"What does len([1,2,3]) return?",3,"The `len()` function in Python returns the number of items in an object. When applied to the list `[1, 2, 3]`, it will return `3`.
+
+So, `len([1, 2, 3])` returns `3`.",2.865468740463257
+32,Coding,Easy,Debugging,Fix: for i in range(5): print(i) if expected output is 1 to 5.,"Use range(1,6)","The issue with your code is that the `print` statement inside the `if` block will not execute because there's no condition specified in the `if` statement. The `for` loop will simply iterate from 0 to 4 (as indicated by `range(5)`), and then the `print` statements inside the loop will be executed.
+
+To achieve the expected output of numbers from 1 to 5, you can modify the loop to start at 1 and adjust the `print` statement accordingly:
+
+```python
+for i in range(1, 6):
+    print(i)
+```
+
+This will correctly print the numbers 1 through 5.",7.440792083740234
+33,Coding,Easy,Complexity,Time complexity of binary search.,O(log n),"The time complexity of the binary search algorithm is \(O(\log n)\).
+
+Here's a brief explanation:
+
+1. **Binary Search Overview**: Binary search works on a sorted array or list and repeatedly divides the search interval in half. If the value of the search key is less than the item in the middle of the interval, narrow the interval to the lower half. Otherwise, narrow it to the upper half. Repeatedly check until the value is found or the interval is empty.
+
+2. **Steps**:
+   - Start with the entire array.
+   - Find the middle element of the current interval.
+   - Compare the middle element with the target value.
+   - If the middle element matches the target, return its index.
+   - If the middle element is greater than the target, repeat the process on the left half of the array.
+   - If the middle element is less than the target, repeat the process on the right half of the array.
+   - Continue this process until the target is found or the interval is exhausted.
+
+3. **Analysis**:
+   - Each step reduces the size of the search space by half.
+   - The number of steps required to reduce the search space from \(n\) elements to 1 is \(\log_2(n)\).
+   - Therefore, the time complexity of binary search is \(O(\log n)\).
+
+This makes binary search very efficient for large datasets compared to linear search, which has a time complexity of \(O(n",15.832776069641113
+34,Coding,Medium,Python,Output of print(2**3),8,The output of `print(2**3)` is `8`.,0.7565927505493164
+35,Coding,Medium,Data Structures,Which data structure is FIFO?,Queue,"A data structure that follows the First-In-First-Out (FIFO) principle is the Queue.
+
+In a queue, elements are added at the back (enqueue operation) and removed from the front (dequeue operation). This ensures that the element that was added first will be the first one to be removed.
+
+Some common examples of queues in programming include:
+
+1. **Array-based Queue**: Implemented using an array where elements are inserted at the end (rear) and removed from the beginning (front).
+2. **Linked List-based Queue**: Implemented using a linked list where nodes are inserted at the end and removed from the beginning.
+3. **Circular Queue**: A variation of the array-based queue where the last position wraps around to the first position when adding or removing elements.
+
+Other data structures that follow different principles include stacks (LIFO - Last-In-First-Out), priority queues (where elements are removed based on their priority rather than order of insertion), and more complex structures like Deque (Double-ended queue) which allows insertion and removal from both ends.",11.666540622711182
+36,Coding,Medium,Sorting,Name one O(n log n) average sorting algorithm.,Merge sort / Heap sort / Quicksort,One O(n log n) average case sorting algorithm is Merge Sort.,0.7702677249908447
+37,Coding,Hard,Recursion,What is the base case in recursion?,Stopping condition,"In recursion, the base case is a condition that stops the recursive process from continuing indefinitely. It serves as the termination condition for the recursion and ensures that the function eventually returns a value rather than calling itself infinitely.
+
+For example, consider the problem of calculating the factorial of a number \( n \), denoted as \( n! \). The factorial of a non-negative integer \( n \) is defined as:
+
+\[ n! = n \times (n-1) \times (n-2) \times \ldots \times 1 \]
+
+The base case for this problem is when \( n = 0 \) or \( n = 1 \):
+
+- \( 0! = 1 \)
+- \( 1! = 1 \)
+
+These values serve as the stopping points because:
+- For \( n = 0 \), there are no numbers to multiply, so the result is 1.
+- For \( n = 1 \), there is only one number to multiply, which is 1 itself.
+
+If we were to define the factorial recursively without a base case, the function would keep calling itself with smaller and smaller values of \( n \), leading to an infinite recursion. Therefore, the base case is crucial to prevent this infinite recursion and ensure that the function terminates correctly.
+
+In summary, the base case in recursion is the simplest possible input that does not require further recursion and provides a direct answer.",15.870697975158691
+38,Coding,Hard,Trees,Which traversal uses a queue?,Breadth-First Search,"A common traversal algorithm that uses a queue is the Breadth-First Search (BFS) algorithm. BFS explores all the vertices of a graph level by level, starting from the root node (or any arbitrary starting node). It uses a queue to keep track of the nodes to be visited next.
+
+Here's a brief overview of how BFS works using a queue:
+
+1. Start at the root node (or any starting node).
+2. Enqueue the starting node and mark it as visited.
+3. Dequeue a node from the front of the queue and process it.
+4. Enqueue all its unvisited neighbors into the queue.
+5. Repeat steps 3 and 4 until the queue is empty.
+
+This ensures that all nodes at the same distance from the starting node are processed before moving on to nodes further away, which is why it's called ""breadth-first.""
+
+Other traversal algorithms like Depth-First Search (DFS) typically use a stack or recursion for implementation, but they do not explicitly use a queue.",10.51915431022644
+39,Coding,Hard,Complexity,Time complexity of linear search.,O(n),"The time complexity of the linear search algorithm can be analyzed as follows:
+
+1. **Definition**: Linear search is an algorithm used to find a target value within a list or array. It sequentially checks each element in the list until it finds the target value or reaches the end of the list.
+
+2. **Worst-Case Scenario**:
+   - In the worst-case scenario, the target value may not be present in the list at all.
+   - The algorithm will have to check every single element in the list before concluding that the target is not found.
+   - Therefore, in the worst case, the number of comparisons made by the linear search algorithm is equal to the size of the list \( n \).
+
+3. **Best-Case Scenario**:
+   - If the target value is found at the first position in the list, the algorithm only needs to make one comparison.
+   - Hence, in the best case, the time complexity is \( O(1) \).
+
+4. **Average-Case Scenario**:
+   - On average, if the target value is equally likely to appear anywhere in the list, the algorithm will need to check approximately half of the elements on average.
+   - Thus, the average time complexity is also \( O(n) \), where \( n \) is the number of elements in the list.
+
+5. **Space Complexity**:
+   - Linear search does not require additional space apart from a few variables for storing indices and temporary values.
+   - Therefore",16.226045608520508
+40,Coding,Hard,Debugging,Why can a while loop become infinite?,Condition never becomes false,"A `while` loop can become infinite if the condition that is checked before each iteration of the loop evaluates to `true` indefinitely. This means that the loop will continue running without ever terminating.
+
+Here's a simple example in Python:
+
+```python
+i = 0
+while i < 5:
+    print(i)
+    i += 1
+```
+
+In this case, the loop will run five times because the condition `i < 5` will eventually become false after `i` reaches 4.
+
+However, consider the following example where the condition never changes to `false`:
+
+```python
+i = 0
+while True:
+    print(i)
+    i += 1
+```
+
+In this example, the loop will run indefinitely because the condition `True` is always true. The loop will only terminate when the program is manually stopped or an error occurs outside the loop.
+
+To avoid infinite loops, it's important to ensure that the loop condition becomes false at some point during execution. This could be done by modifying the loop variable inside the loop, by breaking out of the loop using a `break` statement, or by using other control flow mechanisms like `if` statements to alter the loop condition.",13.290721893310547
+41,Planning,Easy,Scheduling,Create a 4-hour study schedule with 10-minute breaks.,Reasonable schedule,"Creating a structured 4-hour study schedule with 10-minute breaks is a great way to maintain focus and productivity. Here’s a sample schedule that you can adjust based on your specific needs and the subject matter:
+
+### 4-Hour Study Schedule with 10-Minute Breaks
+
+**Time:** 9:00 AM - 1:00 PM
+
+---
+
+#### **9:00 AM - 9:10 AM**
+- **Activity:** Review of Key Concepts
+- **Duration:** 10 minutes
+- **Purpose:** Refresh your memory about the main points covered in the previous session or the day before.
+
+#### **9:10 AM - 9:20 AM**
+- **Activity:** Active Recall
+- **Duration:** 10 minutes
+- **Purpose:** Test yourself on key facts and concepts through flashcards or short quizzes.
+
+#### **9:20 AM - 10:00 AM**
+- **Activity:** Deep Reading/Comprehension
+- **Duration:** 40 minutes
+- **Purpose:** Dive into the material deeply. Focus on understanding the context, implications, and nuances of the content.
+
+#### **10:00 AM - 10:10 AM**
+- **Activity:** Short Break
+- **Duration:** 10 minutes
+- **Purpose:** Take a quick break to stretch, hydrate, or simply relax your mind.
+
+#### **10:1",15.852344512939453
+42,Planning,Easy,Prioritization,"Urgent assignment, exam tomorrow, laundry. What first?",Prioritize urgent/high-impact work,"Given the urgency of your situation, it's important to prioritize tasks that can have the most significant impact or immediate benefits. Here’s a quick breakdown:
+
+1. **Exam Tomorrow**: This is likely the most critical task as it directly affects your academic performance and future opportunities. Make sure you review all the material thoroughly, manage your time effectively, and get enough rest.
+
+2. **Laundry**: While this might not be immediately life-threatening, it could affect your comfort and productivity. If possible, try to do it during a break from studying or when you're feeling less focused.
+
+3. **Urgent Assignment**: Depending on the deadline and importance of the assignment, you may need to allocate some time to work on it. However, if it's an urgent assignment with a short deadline, you might need to dedicate more time to it.
+
+Here’s a practical approach:
+- **Review Exam Material**: Spend at least 1-2 hours reviewing key topics.
+- **Start Assignment**: Allocate 1-2 hours to start working on the assignment.
+- **Breaks and Rest**: Take short breaks (5-10 minutes) every hour to keep your mind fresh.
+- **Laundry**: Do this after you've finished your study and assignment work.
+
+Remember, the goal is to balance these tasks efficiently so you can perform well in your exam while also managing other responsibilities.",14.595205307006836
+43,Planning,Easy,Time Management,2 hours to study 5 chapters. Suggest strategy.,Time-block with prioritization,"Sure! Studying 5 chapters in 2 hours can be challenging, but with a strategic approach, you can make the most of your time. Here’s a suggested study plan:
+
+### 1. **Preparation**
+   - **Review Previous Material:** Spend the first 10-15 minutes reviewing the previous chapter or sections to refresh your memory.
+   - **Outline the Chapters:** Quickly create an outline for each chapter to get a sense of what you need to cover.
+
+### 2. **Active Reading**
+   - **Skim and Scan:** Spend the next 15-20 minutes skimming through the chapters to identify key points, headings, subheadings, and any bolded text. This helps you understand the structure and main ideas.
+   - **Read Actively:** For the remaining 30-40 minutes, read the chapters actively. Highlight important points, take notes, and try to summarize the content in your own words.
+
+### 3. **Practice and Application**
+   - **Solve Examples:** Look for examples and exercises at the end of each chapter. Try to solve them on your own before checking the solutions.
+   - **Apply Knowledge:** If possible, apply the concepts learned to real-world scenarios or hypothetical situations. This could involve creating a short presentation, writing a brief essay, or solving practical problems.
+
+### 4. **Review and Summarize**
+   - **Summarize Key Points:** Spend the last ",16.39290976524353
+44,Planning,Medium,Resource Allocation,"Plan a weekend for project, exercise, family.",Balanced plan,"Sure! Planning a balanced weekend that includes work, exercise, and time with family can be quite rewarding. Here’s a plan that you might find useful:
+
+### Saturday
+
+#### Morning: Project Work
+- **8:00 AM - 10:00 AM:** Start your day with a productive session on your project. This could involve research, writing, coding, or any other task that needs attention.
+- **10:00 AM - 10:30 AM:** Take a short break to stretch or grab a healthy snack.
+
+#### Afternoon: Exercise
+- **10:30 AM - 12:00 PM:** Go for a brisk walk or jog in the park. If you prefer indoor activities, consider doing some yoga or light weightlifting.
+- **12:00 PM - 1:00 PM:** Have a healthy lunch. Opt for foods rich in protein and vegetables to keep energy levels up.
+
+#### Evening: Family Time
+- **1:00 PM - 4:00 PM:** Spend quality time with your family. This could be playing board games, watching a movie together, or having a family dinner.
+- **4:00 PM - 5:00 PM:** Engage in a fun activity like a game night or a craft project.
+
+#### Night: Relaxation
+- **5:00 PM - 6:00 PM:** Wind down with a relaxing activity",15.764665365219116
+45,Planning,Medium,Decision Making,Budget $500 for laptop upgrade. What factors matter?,"Needs, performance, value","When upgrading a laptop within a budget of $500, several factors should be considered to ensure you get the best value and performance for your money. Here are some key considerations:
+
+1. **Type of Laptop**: Determine if you're upgrading an existing laptop or buying a new one. The type of laptop (e.g., gaming, ultrabook, convertible) will influence the components you can afford.
+
+2. **Processor (CPU)**: Upgrading the CPU is often the most impactful change. Look for models that offer better performance within your budget. For example, Intel Core i5 or i7 processors are generally more powerful than i3s, and AMD Ryzen 5 or 7 are competitive options.
+
+3. **Graphics Card (GPU)**: If you plan to use the laptop for gaming or graphic-intensive tasks, consider upgrading the graphics card. NVIDIA GeForce GTX or RTX series cards are popular choices, but they come at a higher cost. Alternatively, AMD Radeon RX series cards are also good options.
+
+4. **RAM (Memory)**: Increasing RAM can significantly improve multitasking capabilities and overall system responsiveness. Aim for at least 8GB, but 16GB is even better.
+
+5. **Storage**: Solid State Drives (SSDs) are faster and more reliable than Hard Disk Drives (HDDs). A 256GB SSD is a good starting point, but 512GB or even 1TB SSDs are available in",16.244449377059937
+46,Planning,Medium,Project Planning,Outline a one-week Python web app plan.,Requirements→development→testing,"Creating a one-week Python web application involves several steps, from planning and setting up the environment to building the core functionality and deploying it. Here’s a detailed outline for a simple blog application using Flask, a popular micro web framework for Python.
+
+### Week 1: Planning and Setup
+
+#### Day 1: Planning and Setting Up Environment
+- **Planning**: Define the scope of your project (e.g., features like user authentication, post creation, comments, etc.). Decide on the database (SQLite is often used for simplicity) and choose a frontend framework if you plan to use one.
+- **Environment Setup**:
+  - Install Python and pip (`python3 -m ensurepip --upgrade`).
+  - Install Flask (`pip install flask`).
+  - Set up a virtual environment (`python3 -m venv myenv`).
+  - Activate the virtual environment (`source myenv/bin/activate` on Unix-based systems or `myenv\Scripts\activate` on Windows).
+  - Install additional dependencies (e.g., SQLite, Flask-SQLAlchemy, Flask-WTF for forms).
+
+#### Day 2: Basic Flask Application Structure
+- **Project Structure**: Create a basic directory structure with `app.py`, `templates`, `static`, and `models.py`.
+- **Basic Flask App**: Write a simple Flask app that serves a static HTML page.
+- **Database Setup**: Initialize a SQLite database and create a model for posts.
+
+#### Day 3: User Authentication
+-",16.088992834091187
+47,Planning,Hard,Constraint Satisfaction,Schedule five meetings with one-hour lunch and no overlaps.,Conflict-free schedule,"I'm sorry for the confusion, but as an AI, I don't have access to your calendar or scheduling capabilities. However, I can guide you on how to schedule these meetings manually.
+
+Here's a suggested schedule for five one-hour meetings without any overlap:
+
+1. **Meeting 1:** 10:00 AM - 11:00 AM
+2. **Lunch Break:** 11:00 AM - 12:00 PM
+3. **Meeting 2:** 12:00 PM - 1:00 PM
+4. **Lunch Break:** 1:00 PM - 2:00 PM
+5. **Meeting 3:** 2:00 PM - 3:00 PM
+
+This schedule allows for a one-hour lunch break between each meeting. If you need to adjust the times based on your specific availability or other commitments, you can simply shift the start times accordingly.
+
+If you have a calendar application like Google Calendar or Outlook, you can create events for each of these slots and set reminders for the lunch breaks.",12.38295316696167
+48,Planning,Hard,Optimization,Choose shortest route across four locations and justify.,Travel-minimizing plan,"Sure! To choose the shortest route across four locations, I'll need the specific coordinates of those locations. Could you please provide me with the latitude and longitude for each of the four locations? This will allow me to calculate the distances between them and determine the shortest route using the Haversine formula or another suitable method for calculating great-circle distances on Earth's surface.",4.031255006790161
+49,Planning,Hard,Learning Plan,Create a 30-day ML learning roadmap.,Weekly milestones,"Creating a comprehensive 30-day machine learning (ML) learning roadmap can be quite intensive, but it's definitely achievable if you dedicate yourself to the process. Here’s a structured plan that covers foundational concepts and practical applications:
+
+### Day 1-5: Introduction to Machine Learning
+- **Introduction to Machine Learning**: Understand what ML is, its types (supervised, unsupervised, reinforcement), and applications.
+- **Mathematics for ML**: Basic linear algebra (vectors, matrices), calculus (derivatives, integrals), probability and statistics.
+
+### Day 6-10: Supervised Learning Basics
+- **Supervised Learning Overview**: Regression and classification problems.
+- **Linear Regression**: Implement simple linear regression from scratch using Python.
+- **Logistic Regression**: Understand logistic regression and implement it in Python.
+- **Evaluation Metrics**: Learn about accuracy, precision, recall, F1 score, ROC curves, and AUC scores.
+
+### Day 11-15: Unsupervised Learning Basics
+- **Unsupervised Learning Overview**: Clustering (k-means, hierarchical clustering), dimensionality reduction (PCA).
+- **Clustering**: Implement k-means clustering from scratch and apply it to real datasets.
+- **Dimensionality Reduction**: Apply PCA to reduce dimensions of a dataset and visualize the results.
+
+### Day 16-20: Reinforcement Learning Basics
+- **Reinforcement Learning Overview**: Markov Decision Processes (MDPs), value iteration",16.038950443267822
+50,Planning,Hard,Risk Analysis,Three software project risks and mitigations.,Valid risks with mitigations,"Certainly! Here are three common software project risks along with potential mitigation strategies:
+
+### 1. **Risk: Delays in Requirements Gathering**
+   - **Description:** Incomplete or unclear requirements can lead to scope creep, increased costs, and delays.
+   - **Mitigation Strategy:** Implement a robust requirements management process. Use tools like Agile methodologies (e.g., Scrum) that encourage frequent feedback from stakeholders. Conduct detailed requirement workshops and use techniques like the ""Five Whys"" to uncover underlying issues.
+
+### 2. **Risk: Technical Debt Accumulation**
+   - **Description:** As the project progresses, developers may take shortcuts to meet deadlines, leading to technical debt. This can make future maintenance and updates more difficult and costly.
+   - **Mitigation Strategy:** Encourage a culture of continuous improvement and refactoring. Regularly schedule time for code reviews and pair programming sessions. Implement automated testing and continuous integration/continuous deployment (CI/CD) pipelines to catch issues early.
+
+### 3. **Risk: Insufficient Testing Coverage**
+   - **Description:** Poor testing practices can result in bugs being introduced into the final product, leading to user dissatisfaction and potential security vulnerabilities.
+   - **Mitigation Strategy:** Adopt comprehensive testing strategies including unit tests, integration tests, and system tests. Use test-driven development (TDD) where possible to ensure that all new features are thoroughly tested before implementation. Automate as much of the testing process as possible to reduce manual effort and increase efficiency",16.02256488800049
